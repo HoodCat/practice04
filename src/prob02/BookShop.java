@@ -1,5 +1,6 @@
 package prob02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BookShop {
@@ -36,5 +37,7 @@ public class BookShop {
 		displayBookInfo( books );
 	}
 
-
+	public static void displayBookInfo(Book[] books) {
+		Arrays.stream(books).forEach(b -> System.out.println(b));
+	}
 }
